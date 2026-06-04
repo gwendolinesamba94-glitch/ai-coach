@@ -10,94 +10,94 @@
   body { font-family: Arial, sans-serif; background: #FAF7F2; color: #1E293B; }
 
   /* NAVBAR */
-  nav { background: #FAF7F2; padding: 14px 40px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e0dbd4; position: sticky; top: 0; z-index: 100; }
-  .nav-logo { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700; color: #1E293B; }
-  .nav-links { display: flex; gap: 28px; align-items: center; }
-  .nav-links a { color: #1E293B; text-decoration: none; font-size: 13px; opacity: 0.65; }
-  .nav-links a:hover { opacity: 1; }
-  .nav-lang { display: flex; align-items: center; gap: 4px; border: 1px solid #e0dbd4; border-radius: 20px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
-  .nav-btn { background: #2D6A4F; color: white; padding: 8px 20px; border-radius: 24px; font-size: 13px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; }
+  nav { background: #FAF7F2; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e0dbd4; position: sticky; top: 0; z-index: 100; }
+  .nav-logo { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: #1E293B; }
+  .nav-links { display: none; }
+  .nav-lang { display: none; }
+  .nav-btn { background: #2D6A4F; color: white; padding: 8px 16px; border-radius: 20px; font-size: 11px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; }
   .nav-btn:hover { background: #245a42; }
+  .nav-toggle { display: block; font-size: 20px; cursor: pointer; background: none; border: none; }
 
   /* HERO */
-  .hero { background: #2D6A4F; display: grid; grid-template-columns: 1fr 1fr; min-height: 320px; overflow: hidden; }
-  .hero-text { padding: 48px 40px; display: flex; flex-direction: column; justify-content: center; }
-  .hero h1 { color: white; font-size: 44px; font-weight: 800; line-height: 1.1; margin-bottom: 14px; }
-  .hero-sub { color: rgba(255,255,255,0.9); font-size: 16px; margin-bottom: 10px; }
-  .hero-sub span { color: #F4B251; font-weight: 700; background: rgba(255,255,255,0.15); padding: 2px 10px; border-radius: 12px; }
-  .hero-desc { color: rgba(255,255,255,0.75); font-size: 13px; line-height: 1.7; margin-bottom: 28px; max-width: 420px; }
-  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
-  .btn-primary { background: #F4B251; color: #1E293B; padding: 12px 26px; border-radius: 28px; font-size: 13px; font-weight: 700; text-decoration: none; border: none; cursor: pointer; }
-  .btn-secondary { background: rgba(255,255,255,0.15); color: white; padding: 12px 26px; border-radius: 28px; font-size: 13px; font-weight: 500; border: 1.5px solid rgba(255,255,255,0.4); text-decoration: none; cursor: pointer; }
+  .hero { background: #2D6A4F; display: flex; flex-direction: column; min-height: auto; overflow: hidden; }
+  .hero-text { padding: 32px 16px; display: flex; flex-direction: column; justify-content: center; }
+  .hero h1 { color: white; font-size: 28px; font-weight: 800; line-height: 1.2; margin-bottom: 10px; }
+  .hero-sub { color: rgba(255,255,255,0.9); font-size: 13px; margin-bottom: 8px; }
+  .hero-sub span { color: #F4B251; font-weight: 700; background: rgba(255,255,255,0.15); padding: 2px 8px; border-radius: 10px; }
+  .hero-desc { color: rgba(255,255,255,0.75); font-size: 12px; line-height: 1.6; margin-bottom: 16px; }
+  .hero-btns { display: flex; gap: 8px; flex-direction: column; margin-bottom: 10px; }
+  .btn-primary { background: #F4B251; color: #1E293B; padding: 11px 20px; border-radius: 24px; font-size: 12px; font-weight: 700; text-decoration: none; border: none; cursor: pointer; text-align: center; }
+  .btn-secondary { background: rgba(255,255,255,0.15); color: white; padding: 11px 20px; border-radius: 24px; font-size: 12px; font-weight: 500; border: 1.5px solid rgba(255,255,255,0.4); text-decoration: none; cursor: pointer; text-align: center; }
   .btn-primary:hover { background: #e6a43e; }
-  .hero-note { color: rgba(255,255,255,0.45); font-size: 11px; }
+  .hero-note { color: rgba(255,255,255,0.45); font-size: 10px; }
   .hero-mascot { display: flex; align-items: flex-end; justify-content: center; padding: 16px 8px 0; overflow: hidden; }
+  .hero-mascot svg { max-width: 200px; max-height: 200px; }
 
   /* SECTIONS */
-  section { padding: 36px 40px; }
-  .section-label { text-align: center; font-size: 11px; color: #2D6A4F; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; margin-bottom: 8px; }
-  .section-title { text-align: center; font-size: 20px; font-weight: 700; color: #1E293B; margin-bottom: 24px; }
+  section { padding: 24px 16px; }
+  .section-label { text-align: center; font-size: 10px; color: #2D6A4F; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-bottom: 6px; }
+  .section-title { text-align: center; font-size: 18px; font-weight: 700; color: #1E293B; margin-bottom: 16px; }
 
   /* STEPS */
   .steps { background: white; border-bottom: 1px solid #e0dbd4; }
-  .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .step-card { background: #FAF7F2; border-radius: 16px; padding: 22px; border: 0.5px solid #e0dbd4; }
+  .steps-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .step-card { background: #FAF7F2; border-radius: 14px; padding: 16px; border: 0.5px solid #e0dbd4; }
   .step-card.highlight { border: 2px solid #F4B251; }
-  .step-icon { width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; font-size: 20px; }
+  .step-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; font-size: 18px; }
   .step-icon.green { background: #2D6A4F; color: white; }
   .step-icon.yellow { background: #F4B251; color: #1E293B; }
-  .step-title { font-size: 14px; font-weight: 700; color: #1E293B; margin-bottom: 8px; }
-  .step-desc { font-size: 12px; color: #1E293B; opacity: 0.65; line-height: 1.6; }
+  .step-title { font-size: 13px; font-weight: 700; color: #1E293B; margin-bottom: 6px; }
+  .step-desc { font-size: 11px; color: #1E293B; opacity: 0.65; line-height: 1.5; }
 
   /* MODULES */
   .modules { background: #FAF7F2; border-bottom: 1px solid #e0dbd4; }
-  .modules-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-  .module-card { background: white; border-radius: 14px; padding: 18px; border: 0.5px solid #e0dbd4; text-align: center; }
-  .module-icon { font-size: 28px; display: block; margin-bottom: 10px; }
-  .module-title { font-size: 13px; font-weight: 700; color: #1E293B; margin-bottom: 4px; }
-  .module-desc { font-size: 11px; color: #1E293B; opacity: 0.5; }
+  .modules-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  .module-card { background: white; border-radius: 12px; padding: 14px; border: 0.5px solid #e0dbd4; text-align: center; }
+  .module-icon { font-size: 24px; display: block; margin-bottom: 8px; }
+  .module-title { font-size: 12px; font-weight: 700; color: #1E293B; margin-bottom: 3px; }
+  .module-desc { font-size: 10px; color: #1E293B; opacity: 0.5; }
 
   /* SÉCURITÉ */
   .security { background: white; border-bottom: 1px solid #e0dbd4; }
-  .security-header { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
-  .security-icon { width: 36px; height: 36px; background: #2D6A4F; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-  .security-title { font-size: 15px; font-weight: 700; color: #1E293B; }
-  .security-sub { font-size: 12px; color: #1E293B; opacity: 0.5; }
-  .circles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 14px; }
-  .circle-card { border-radius: 14px; padding: 16px; }
+  .security-header { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+  .security-icon { width: 32px; height: 32px; background: #2D6A4F; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+  .security-title { font-size: 13px; font-weight: 700; color: #1E293B; }
+  .security-sub { font-size: 11px; color: #1E293B; opacity: 0.5; }
+  .circles-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 12px; }
+  .circle-card { border-radius: 12px; padding: 12px; }
   .circle-card.c1 { border: 2px solid #2D6A4F; background: #f0f7f3; }
   .circle-card.c2 { border: 2px solid #2D6A4F; background: #f0f7f3; opacity: 0.75; }
   .circle-card.c3 { border: 0.5px solid #e0dbd4; background: #FAF7F2; }
-  .circle-label { font-size: 9px; font-weight: 700; color: #2D6A4F; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 5px; }
+  .circle-label { font-size: 8px; font-weight: 700; color: #2D6A4F; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 4px; }
   .circle-label.dim { color: #1E293B; opacity: 0.45; }
-  .circle-text { font-size: 12px; color: #1E293B; line-height: 1.5; opacity: 0.85; }
-  .security-badges { display: flex; gap: 20px; flex-wrap: wrap; }
-  .badge { font-size: 12px; color: #2D6A4F; font-weight: 600; display: flex; align-items: center; gap: 4px; }
+  .circle-text { font-size: 11px; color: #1E293B; line-height: 1.4; opacity: 0.85; }
+  .security-badges { display: flex; gap: 10px; flex-wrap: wrap; flex-direction: column; }
+  .badge { font-size: 10px; color: #2D6A4F; font-weight: 600; display: flex; align-items: center; gap: 3px; }
 
   /* TÉMOIGNAGES */
   .testimonials { background: #FAF7F2; border-bottom: 1px solid #e0dbd4; }
-  .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-  .testi-card { background: white; border-radius: 16px; padding: 18px; border: 0.5px solid #e0dbd4; }
-  .stars { color: #F4B251; font-size: 13px; margin-bottom: 10px; }
-  .testi-text { font-size: 12px; color: #1E293B; line-height: 1.6; font-style: italic; opacity: 0.85; margin-bottom: 12px; }
-  .testi-author { display: flex; align-items: center; gap: 8px; }
-  .testi-avatar { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: white; flex-shrink: 0; }
-  .testi-name { font-size: 12px; font-weight: 600; color: #1E293B; }
-  .testi-info { font-size: 11px; color: #1E293B; opacity: 0.45; }
+  .testi-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .testi-card { background: white; border-radius: 14px; padding: 14px; border: 0.5px solid #e0dbd4; }
+  .stars { color: #F4B251; font-size: 11px; margin-bottom: 8px; }
+  .testi-text { font-size: 11px; color: #1E293B; line-height: 1.5; font-style: italic; opacity: 0.85; margin-bottom: 10px; }
+  .testi-author { display: flex; align-items: center; gap: 6px; }
+  .testi-avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: white; flex-shrink: 0; }
+  .testi-name { font-size: 11px; font-weight: 600; color: #1E293B; }
+  .testi-info { font-size: 10px; color: #1E293B; opacity: 0.45; }
 
   /* TARIFS */
   .pricing { background: white; border-bottom: 1px solid #e0dbd4; }
-  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-  .plan-card { border-radius: 16px; padding: 22px; border: 0.5px solid #e0dbd4; background: #FAF7F2; }
-  .plan-card.popular { border: 2.5px solid #2D6A4F; background: white; position: relative; }
-  .popular-badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: #2D6A4F; color: white; font-size: 10px; padding: 3px 12px; border-radius: 12px; white-space: nowrap; font-weight: 700; }
-  .plan-name { font-size: 14px; font-weight: 700; color: #1E293B; margin-bottom: 6px; }
-  .plan-price { font-size: 28px; font-weight: 800; margin-bottom: 12px; }
+  .pricing-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .plan-card { border-radius: 14px; padding: 16px; border: 0.5px solid #e0dbd4; background: #FAF7F2; }
+  .plan-card.popular { border: 2px solid #2D6A4F; background: white; position: relative; }
+  .popular-badge { position: absolute; top: -8px; left: 50%; transform: translateX(-50%); background: #2D6A4F; color: white; font-size: 9px; padding: 2px 10px; border-radius: 10px; white-space: nowrap; font-weight: 700; }
+  .plan-name { font-size: 13px; font-weight: 700; color: #1E293B; margin-bottom: 5px; }
+  .plan-price { font-size: 24px; font-weight: 800; margin-bottom: 10px; }
   .plan-price.green { color: #2D6A4F; }
   .plan-price.yellow { color: #F4B251; }
-  .plan-price span { font-size: 13px; opacity: 0.45; font-weight: 400; }
-  .plan-features { font-size: 11px; color: #1E293B; opacity: 0.65; line-height: 2; margin-bottom: 16px; }
-  .plan-btn { width: 100%; padding: 10px; border-radius: 22px; font-size: 13px; font-weight: 700; cursor: pointer; border: none; text-align: center; display: block; text-decoration: none; }
+  .plan-price span { font-size: 11px; opacity: 0.45; font-weight: 400; }
+  .plan-features { font-size: 10px; color: #1E293B; opacity: 0.65; line-height: 1.8; margin-bottom: 12px; }
+  .plan-btn { width: 100%; padding: 10px; border-radius: 20px; font-size: 12px; font-weight: 700; cursor: pointer; border: none; text-align: center; display: block; text-decoration: none; }
   .plan-btn.outline { border: 1.5px solid #1E293B; background: transparent; color: #1E293B; }
   .plan-btn.filled-green { background: #2D6A4F; color: white; }
   .plan-btn.filled-yellow { background: #F4B251; color: #1E293B; }
@@ -105,43 +105,37 @@
 
   /* FAQ */
   .faq { background: #FAF7F2; border-bottom: 1px solid #e0dbd4; }
-  .faq-list { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 8px; }
-  .faq-item { background: white; border-radius: 12px; border: 0.5px solid #e0dbd4; overflow: hidden; }
-  .faq-question { padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 13px; font-weight: 600; color: #1E293B; }
-  .faq-toggle { color: #2D6A4F; font-weight: 700; font-size: 18px; transition: transform 0.2s; }
-  .faq-answer { padding: 0 18px 14px; font-size: 12px; color: #1E293B; opacity: 0.75; line-height: 1.6; display: none; }
+  .faq-list { max-width: 100%; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+  .faq-item { background: white; border-radius: 10px; border: 0.5px solid #e0dbd4; overflow: hidden; }
+  .faq-question { padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-size: 12px; font-weight: 600; color: #1E293B; }
+  .faq-toggle { color: #2D6A4F; font-weight: 700; font-size: 16px; transition: transform 0.2s; }
+  .faq-answer { padding: 0 14px 10px; font-size: 11px; color: #1E293B; opacity: 0.75; line-height: 1.5; display: none; }
   .faq-answer.open { display: block; }
-  .faq-more { text-align: center; margin-top: 14px; }
-  .faq-more a { font-size: 13px; color: #2D6A4F; font-weight: 600; text-decoration: none; }
+  .faq-more { text-align: center; margin-top: 10px; }
+  .faq-more a { font-size: 11px; color: #2D6A4F; font-weight: 600; text-decoration: none; }
 
   /* CTA FINAL */
-  .cta-final { background: #2D6A4F; padding: 36px 40px; text-align: center; }
-  .cta-final h2 { color: white; font-size: 22px; font-weight: 800; margin-bottom: 8px; }
-  .cta-final p { color: rgba(255,255,255,0.75); font-size: 14px; margin-bottom: 22px; }
-  .store-btns { display: flex; gap: 12px; justify-content: center; }
-  .store-btn { display: flex; align-items: center; gap: 10px; background: #1E293B; color: white; padding: 11px 22px; border-radius: 14px; text-decoration: none; }
-  .store-btn-text div:first-child { font-size: 9px; opacity: 0.55; }
-  .store-btn-text div:last-child { font-size: 13px; font-weight: 700; }
+  .cta-final { background: #2D6A4F; padding: 24px 16px; text-align: center; }
+  .cta-final h2 { color: white; font-size: 18px; font-weight: 800; margin-bottom: 6px; }
+  .cta-final p { color: rgba(255,255,255,0.75); font-size: 12px; margin-bottom: 16px; }
+  .store-btns { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+  .store-btn { display: flex; align-items: center; gap: 8px; background: #1E293B; color: white; padding: 10px 16px; border-radius: 12px; text-decoration: none; flex: 1; min-width: 140px; }
+  .store-btn-text div:first-child { font-size: 8px; opacity: 0.55; }
+  .store-btn-text div:last-child { font-size: 11px; font-weight: 700; }
 
   /* FOOTER */
-  footer { padding: 14px 40px; display: flex; justify-content: space-between; align-items: center; background: #FAF7F2; border-top: 1px solid #e0dbd4; }
-  footer span, footer a { font-size: 12px; color: #1E293B; opacity: 0.4; text-decoration: none; }
-  .footer-links { display: flex; gap: 20px; }
+  footer { padding: 12px 16px; display: flex; flex-direction: column; gap: 8px; align-items: center; text-align: center; background: #FAF7F2; border-top: 1px solid #e0dbd4; }
+  footer span, footer a { font-size: 10px; color: #1E293B; opacity: 0.4; text-decoration: none; }
+  .footer-links { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
 
-  /* GRAPHIQUE SPORTS */
-  .sports { background: white; border-bottom: 1px solid #e0dbd4; }
-  .sport-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-  .sport-emoji { font-size: 16px; width: 26px; text-align: center; }
-  .sport-label { font-size: 12px; color: #1E293B; width: 120px; font-weight: 500; }
-  .sport-track { flex: 1; background: #f0f7f3; border-radius: 6px; height: 20px; overflow: hidden; }
-  .sport-fill { height: 100%; border-radius: 6px; display: flex; align-items: center; padding-left: 8px; }
-  .sport-fill.dark { background: #2D6A4F; }
-  .sport-fill.light { background: #87A987; }
-  .sport-fill.yellow { background: #F4B251; }
-  .sport-pct { font-size: 10px; color: white; font-weight: 700; }
-  .sport-pct.dark { color: #1E293B; }
-  .sport-source { text-align: center; font-size: 10px; color: #1E293B; opacity: 0.35; margin-top: 10px; }
-  .sports-inner { max-width: 560px; margin: 0 auto; }
+  /* RESPONSIVE MOBILE */
+  @media (max-width: 768px) {
+    nav, section, .cta-final, footer { padding: 12px 14px; }
+    .hero { min-height: auto; }
+    .hero-text { padding: 24px 14px; }
+    .hero h1 { font-size: 24px; }
+    .steps-grid, .modules-grid, .pricing-grid, .circles-grid, .testi-grid { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -149,37 +143,30 @@
 <!-- NAVBAR -->
 <nav>
   <div class="nav-logo">
-    <svg width="28" height="28" viewBox="0 0 34 34" fill="none">
+    <svg width="24" height="24" viewBox="0 0 34 34" fill="none">
       <circle cx="11" cy="20" r="7" fill="#2D6A4F" opacity="0.9"/>
       <circle cx="23" cy="14" r="7" fill="#2D6A4F" opacity="0.45"/>
       <line x1="11" y1="20" x2="23" y2="14" stroke="#1E293B" stroke-width="1.5" opacity="0.25"/>
     </svg>
     AI COACH
   </div>
-  <div class="nav-links">
-    <a href="#comment">Comment ça marche</a>
-    <a href="#securite">Sécurité</a>
-    <a href="#tarifs">Tarifs</a>
-    <a href="#faq">FAQ</a>
-    <div class="nav-lang">🇫🇷 FR ▾</div>
-    <a href="#tarifs" class="nav-btn">Télécharger</a>
-  </div>
+  <a href="#tarifs" class="nav-btn">Télécharger</a>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-text">
-    <h1>Trouve ton<br>rythme</h1>
-    <p class="hero-sub">L'IA qui crée ton <span>Binôme Familial Idéal</span></p>
-    <p class="hero-desc">L'IA analyse le niveau, l'emploi du temps et le caractère de chaque membre de ta famille pour créer des binômes sportifs parfaitement compatibles.</p>
+    <h1>Trouve ton rythme</h1>
+    <p class="hero-sub">L'IA qui crée ton <span>Binôme Idéal</span></p>
+    <p class="hero-desc">L'IA analyse le niveau, l'emploi du temps et le caractère de chaque membre pour créer des binômes sportifs parfaitement compatibles.</p>
     <div class="hero-btns">
       <a href="#tarifs" class="btn-primary">Télécharger gratuitement</a>
       <a href="#comment" class="btn-secondary">Comment ça marche</a>
     </div>
-    <p class="hero-note">RGPD · Hébergement Europe · Gratuit pour commencer</p>
+    <p class="hero-note">RGPD · Hébergement Europe · Gratuit</p>
   </div>
   <div class="hero-mascot">
-    <svg viewBox="0 0 300 280" width="100%" style="max-width:300px;" aria-label="Mascotte Binôme Familial">
+    <svg viewBox="0 0 300 280" width="100%" style="max-width:180px;" aria-label="Mascotte">
       <ellipse cx="100" cy="272" rx="52" ry="8" fill="rgba(0,0,0,0.15)"/>
       <ellipse cx="210" cy="272" rx="40" ry="7" fill="rgba(0,0,0,0.12)"/>
       <rect x="62" y="158" width="76" height="108" rx="26" fill="#FAF7F2"/>
@@ -210,77 +197,37 @@
       <ellipse cx="127" cy="125" rx="8" ry="6" fill="#E8A090" opacity="0.5"/>
       <rect x="74" y="184" width="50" height="18" rx="6" fill="rgba(255,255,255,0.9)"/>
       <text x="99" y="197" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#2D6A4F">★★★★</text>
-      <line x1="184" y1="195" x2="216" y2="195" stroke="#F4B251" stroke-width="2" stroke-dasharray="5,3"/>
-      <circle cx="200" cy="195" r="16" fill="#F4B251"/>
-      <text x="200" y="191" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="#1E293B">IA</text>
-      <text x="200" y="202" text-anchor="middle" font-family="Arial" font-size="7" fill="#1E293B">97%</text>
-      <rect x="222" y="192" width="60" height="82" rx="22" fill="#FAF7F2"/>
-      <rect x="222" y="192" width="60" height="54" rx="22" fill="#F4B251"/>
-      <rect x="222" y="226" width="60" height="20" fill="#F4B251"/>
-      <rect x="197" y="200" width="28" height="12" rx="6" fill="#F4B251" transform="rotate(8,211,206)"/>
-      <circle cx="194" cy="207" r="8" fill="#F5D5A0"/>
-      <rect x="278" y="200" width="22" height="12" rx="6" fill="#F4B251" transform="rotate(-20,289,206)"/>
-      <circle cx="298" cy="195" r="8" fill="#F5D5A0"/>
-      <rect x="230" y="256" width="17" height="28" rx="8" fill="#1E293B"/>
-      <rect x="256" y="256" width="17" height="28" rx="8" fill="#1E293B"/>
-      <ellipse cx="238" cy="282" rx="12" ry="6" fill="#1E293B"/>
-      <ellipse cx="264" cy="282" rx="12" ry="6" fill="#1E293B"/>
-      <rect x="244" y="170" width="16" height="22" rx="7" fill="#F5D5A0"/>
-      <circle cx="252" cy="150" r="34" fill="#F5D5A0"/>
-      <ellipse cx="252" cy="120" rx="32" ry="12" fill="#2D1B0E"/>
-      <rect x="220" y="120" width="64" height="16" fill="#2D1B0E"/>
-      <ellipse cx="233" cy="130" rx="12" ry="14" fill="#2D1B0E"/>
-      <ellipse cx="271" cy="130" rx="12" ry="14" fill="#2D1B0E"/>
-      <ellipse cx="241" cy="147" rx="8" ry="9" fill="white"/>
-      <ellipse cx="263" cy="147" rx="8" ry="9" fill="white"/>
-      <circle cx="243" cy="148" r="6" fill="#1E293B"/>
-      <circle cx="265" cy="148" r="6" fill="#1E293B"/>
-      <circle cx="245" cy="146" r="2" fill="white"/>
-      <circle cx="267" cy="146" r="2" fill="white"/>
-      <path d="M241 162 Q252 173 263 162" stroke="#C47A5A" stroke-width="2" fill="rgba(232,160,144,0.3)" stroke-linecap="round"/>
-      <ellipse cx="230" cy="157" rx="7" ry="5" fill="#F4A0A0" opacity="0.6"/>
-      <ellipse cx="274" cy="157" rx="7" ry="5" fill="#F4A0A0" opacity="0.6"/>
-      <rect x="230" y="213" width="44" height="16" rx="5" fill="rgba(255,255,255,0.9)"/>
-      <text x="252" y="225" text-anchor="middle" font-family="Arial" font-size="9" font-weight="700" fill="#F4B251">★☆☆☆</text>
-      <rect x="22" y="48" width="118" height="36" rx="11" fill="rgba(255,255,255,0.95)"/>
-      <polygon points="70,84 56,96 82,84" fill="rgba(255,255,255,0.95)"/>
-      <text x="81" y="64" text-anchor="middle" font-family="Arial" font-size="9" font-weight="700" fill="#2D6A4F">« Encore 200 m !</text>
-      <text x="81" y="78" text-anchor="middle" font-family="Arial" font-size="9" fill="#1E293B" opacity="0.8">Tu y es ! »</text>
-      <rect x="170" y="48" width="118" height="36" rx="11" fill="#F4B251"/>
-      <polygon points="232,84 218,96 244,84" fill="#F4B251"/>
-      <text x="229" y="64" text-anchor="middle" font-family="Arial" font-size="9" font-weight="700" fill="#1E293B">« J'arrive !</text>
-      <text x="229" y="78" text-anchor="middle" font-family="Arial" font-size="9" fill="#1E293B" opacity="0.8">+15 pts ! »</text>
     </svg>
   </div>
 </div>
 
 <!-- 3 ÉTAPES -->
 <section id="comment" class="steps">
-  <p class="section-label">Le Binôme Familial Idéal en 3 étapes</p>
-  <h2 class="section-title">Comment l'IA crée votre binôme parfait</h2>
+  <p class="section-label">En 3 étapes</p>
+  <h2 class="section-title">Comment l'IA crée votre binôme</h2>
   <div class="steps-grid">
     <div class="step-card">
-      <div class="step-icon green"><i class="ti ti-brain"></i></div>
+      <div class="step-icon green">🧠</div>
       <div class="step-title">1. L'IA vous analyse</div>
-      <div class="step-desc">Niveau sportif, emploi du temps et caractère de chaque membre — compétiteur, explorateur ou régulier</div>
+      <div class="step-desc">Niveau sportif, emploi du temps et caractère de chaque membre</div>
     </div>
     <div class="step-card">
-      <div class="step-icon green"><i class="ti ti-users"></i></div>
+      <div class="step-icon green">👥</div>
       <div class="step-title">2. Votre binôme est créé</div>
-      <div class="step-desc">Un partenaire virtuel ou une famille partenaire locale avec les mêmes contraintes que vous</div>
+      <div class="step-desc">Un partenaire compatible avec vos contraintes</div>
     </div>
     <div class="step-card highlight">
-      <div class="step-icon yellow"><i class="ti ti-trending-up"></i></div>
+      <div class="step-icon yellow">📈</div>
       <div class="step-title">3. Vous progressez ensemble</div>
-      <div class="step-desc">Le système de handicap automatique garantit que chaque membre arrive au même point</div>
+      <div class="step-desc">Handicap automatique pour arriver au même point</div>
     </div>
   </div>
 </section>
 
-<!-- 4 MODULES (sans Santé & Nutrition) -->
+<!-- 3 MODULES -->
 <section class="modules">
-  <p class="section-label">Les modules AI COACH</p>
-  <h2 class="section-title">Tout ce dont votre famille a besoin</h2>
+  <p class="section-label">Les modules</p>
+  <h2 class="section-title">Tout ce dont vous avez besoin</h2>
   <div class="modules-grid">
     <div class="module-card">
       <span class="module-icon">🏃</span>
@@ -305,22 +252,22 @@
   <div class="security-header">
     <div class="security-icon">🛡️</div>
     <div>
-      <div class="security-title">Protection des mineurs — Les 3 cercles de confiance</div>
-      <div class="security-sub">Un enfant ne peut jamais interagir avec un inconnu</div>
+      <div class="security-title">Protection des mineurs</div>
+      <div class="security-sub">Les 3 cercles de confiance</div>
     </div>
   </div>
   <div class="circles-grid">
     <div class="circle-card c1">
       <div class="circle-label">Cercle 1 — Ma famille</div>
-      <div class="circle-text">Accès immédiat. Membres ajoutés par le parent uniquement.</div>
+      <div class="circle-text">Accès immédiat. Membres ajoutés par le parent.</div>
     </div>
     <div class="circle-card c2">
       <div class="circle-label">Cercle 2 — Familles amies</div>
-      <div class="circle-text">Invitation parentale par code privé uniquement.</div>
+      <div class="circle-text">Invitation parentale par code privé.</div>
     </div>
     <div class="circle-card c3">
       <div class="circle-label dim">Cercle 3 — Communauté</div>
-      <div class="circle-text">Adultes vérifiés uniquement. Enfants jamais exposés.</div>
+      <div class="circle-text">Adultes vérifiés. Enfants jamais exposés.</div>
     </div>
   </div>
   <div class="security-badges">
@@ -337,26 +284,26 @@
   <div class="testi-grid">
     <div class="testi-card">
       <div class="stars">★★★★★</div>
-      <p class="testi-text">« Pour la première fois toute ma famille a fait 10 km ensemble. Chacun à son rythme et on est arrivés au sommet ensemble. »</p>
+      <p class="testi-text">« Toute ma famille a fait 10 km ensemble. Chacun à son rythme et on est arrivés ensemble. »</p>
       <div class="testi-author">
         <div class="testi-avatar" style="background:#2D6A4F;">JL</div>
-        <div><div class="testi-name">Julie, 38 ans — Lyon</div><div class="testi-info">2 enfants</div></div>
+        <div><div class="testi-name">Julie, 38 ans</div><div class="testi-info">Lyon · 2 enfants</div></div>
       </div>
     </div>
     <div class="testi-card">
       <div class="stars">★★★★★</div>
-      <p class="testi-text">« Mes trois enfants ont enfin un défi adapté à chacun. On pratique vraiment ensemble pour la première fois. »</p>
+      <p class="testi-text">« Mes trois enfants ont enfin un défi adapté. On pratique vraiment ensemble. »</p>
       <div class="testi-author">
         <div class="testi-avatar" style="background:#1E293B;">TM</div>
-        <div><div class="testi-name">Thomas, 43 ans — Bordeaux</div><div class="testi-info">3 enfants</div></div>
+        <div><div class="testi-name">Thomas, 43 ans</div><div class="testi-info">Bordeaux · 3 enfants</div></div>
       </div>
     </div>
     <div class="testi-card">
       <div class="stars">★★★★★</div>
-      <p class="testi-text">« On pensait qu'on ne pourrait plus suivre les petits. AI COACH adapte le parcours de chacun. On arrive tous ensemble. »</p>
+      <p class="testi-text">« On pensait ne plus pouvoir suivre les petits. AI COACH adapte le parcours. »</p>
       <div class="testi-author">
         <div class="testi-avatar" style="background:#2D6A4F;">MR</div>
-        <div><div class="testi-name">Martine & Roger — Grenoble</div><div class="testi-info">Grands-parents</div></div>
+        <div><div class="testi-name">Martine & Roger</div><div class="testi-info">Grenoble · Grands-parents</div></div>
       </div>
     </div>
   </div>
@@ -397,28 +344,28 @@
         Mes données sont-elles sécurisées ?
         <span class="faq-toggle">−</span>
       </div>
-      <div class="faq-answer open">Oui. Données hébergées en Europe (Azure Dublin), certifiées ISO 27001, conformes RGPD. Les profils de vos enfants sont anonymisés par défaut et protégés par le système des 3 cercles de confiance.</div>
+      <div class="faq-answer open">Oui. Données en Europe (Azure Dublin), ISO 27001, RGPD. Profils enfants anonymisés par défaut.</div>
     </div>
     <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
-        À partir de quel âge peut-on utiliser AI COACH ?
+        À partir de quel âge ?
         <span class="faq-toggle">+</span>
       </div>
-      <div class="faq-answer">AI COACH est conçu pour les familles avec enfants de 5 à 18 ans. Les profils enfants sont créés par le parent et restent sous son contrôle total.</div>
+      <div class="faq-answer">De 5 à 18 ans. Profils créés par les parents.</div>
     </div>
     <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
-        Comment fonctionne le Binôme Familial Idéal ?
+        Comment fonctionne le binôme ?
         <span class="faq-toggle">+</span>
       </div>
-      <div class="faq-answer">L'IA analyse le niveau, l'emploi du temps et le caractère de chaque membre pour créer un partenaire sportif parfaitement compatible. Le système de handicap automatique garantit que tout le monde arrive ensemble.</div>
+      <div class="faq-answer">L'IA analyse niveau, emploi du temps et caractère. Handicap automatique pour arriver ensemble.</div>
     </div>
     <div class="faq-item">
       <div class="faq-question" onclick="toggleFaq(this)">
-        Puis-je annuler mon abonnement à tout moment ?
+        Puis-je annuler à tout moment ?
         <span class="faq-toggle">+</span>
       </div>
-      <div class="faq-answer">Oui, sans engagement. Vous pouvez annuler votre abonnement à tout moment depuis les paramètres de votre compte. Aucun frais caché.</div>
+      <div class="faq-answer">Oui, sans engagement. Aucun frais caché.</div>
     </div>
     <div class="faq-more"><a href="#">Voir toutes les questions →</a></div>
   </div>
@@ -427,22 +374,22 @@
 <!-- CTA FINAL -->
 <div class="cta-final">
   <h2>Prêt à trouver votre rythme ?</h2>
-  <p>Rejoignez les familles déjà actives avec Sport Family Connect</p>
+  <p>Rejoignez les familles actives</p>
   <div class="store-btns">
     <a href="#" class="store-btn">
-      <span style="font-size:20px;">🍎</span>
-      <div class="store-btn-text"><div>Télécharger sur</div><div>App Store</div></div>
+      <span style="font-size:18px;">🍎</span>
+      <div class="store-btn-text"><div>App Store</div><div>iOS</div></div>
     </a>
     <a href="#" class="store-btn">
-      <span style="font-size:20px;">▶️</span>
-      <div class="store-btn-text"><div>Disponible sur</div><div>Google Play</div></div>
+      <span style="font-size:18px;">▶️</span>
+      <div class="store-btn-text"><div>Google</div><div>Play</div></div>
     </a>
   </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <span>© 2026 Sport Family Connect SAS — Annecy (74)</span>
+  <span>© 2026 Sport Family Connect</span>
   <div class="footer-links">
     <a href="#">Mentions légales</a>
     <a href="#">Confidentialité</a>
